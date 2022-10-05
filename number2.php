@@ -31,11 +31,12 @@ $P = $d * $e;
 $F = 2*$d + 2*$e;
 $g = $d % $e;
 echo "<br>";
-echo "Pole prostokoąta o bokach ".$d." i ".$e." wynosi ".$P. " j<sup>2</sup>";
+echo "Pole prostokąta o bokach ".$d." i ".$e." wynosi ".$P. " j<sup>2</sup>";
 echo "<br>";
 echo "Obwód prostokąta wynosi ".$d." i ".$e." wynosi ".$F;
 echo "<br>";
 echo "Reszta z dzielenia ".$d." i ".$e." wynosi ".$g;
+echo "<br>";
 
 
 
