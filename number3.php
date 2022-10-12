@@ -3,7 +3,8 @@
 <head>
 <style>
 
-p{ color: aliceblue;
+p{
+    color: aliceblue;
     background-color: darkblue;
 
 
@@ -23,23 +24,7 @@ p{ color: aliceblue;
 
 
 
-
-
-
-
-?>
-
-<p> <b> aha</b> <?php
-
-
-    echo var_dump abs(int_float);
-
-    ?>
-
-
-
-
-</p>
+<p><b>Wartość funkcji abs z -5 wynosi</b> <?php var_dump(abs(-5)); ?></p>
 
 </body>
 </html>
