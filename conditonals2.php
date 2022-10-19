@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php
+
 $miesiac = rand (1,15);
 
 
@@ -47,12 +48,12 @@ switch ($miesiac){
     case 13:
     case 14:
     case 15:
-        echo "Błedny numer miesiąca";
+        echo "Błędny numer miesiąca";
         break;
 }
 
 
-?>
+
 
 
 </h1>
