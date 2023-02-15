@@ -45,27 +45,39 @@ echo "$n[0]".$n[1]. "$n[2]"." i". "$n[3]"."."
 
 ?>
     </pre>
-
+<pre>
+    <table style="border:solid"
+    <table>
+        <td>
 <?php
-$numbers = range (0, 10);
+$array = array(
+        "Skazani na Shawshank" => "dramat",
+    "Nietykalni" => "biograficzny",
+    "Władca Pierścieni:Powrót króla" => "fantasy",
+    "Pulp Fiction" => "gangsterski",
+    "Siedem" => "kryminał",
+    "Podziemny krąg" => "thriller",
+    "Avangers: Wojna bez granic" => "akcja",
+    "Dobry, zły i brzydki" => "western",
 
-shuffle ($numbers);
 
-}
+
+);
+
+print_r($array);
+asort( $array);
+print_r($array);
+ksort($array);
+print_r($array);
+arsort($array);
+print_r($array);
+krsort($array);
+print_r($array);
 
 ?>
-<table style="background-color: aliceblue; border-collapse: collapse; width: 100%"
-       <tr>
-           <?php
-
-           foreach ($nubmers as $nubmer) {
-               echo "<td style=border: 1px solid dodgerblue;padding:10px;text-align:center
-               >".$number. ''</td>'';
-           }
-           ?>
-
-       </tr>
-
+</pre>
+</td>
+</table>
 </body>
 </html>
 
