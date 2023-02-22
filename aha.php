@@ -10,29 +10,33 @@
 <body>
 <?php
 $a = array(
-    'styczen' => '1',
-    'luty' => '2',
-    'marzec' => '3',
-    'kwiecien'  => '4',
-    'maj' => '5',
-    'czerwiec' => '6',
-    'lipiec' => '7',
-    'sierpien' => '8',
-    'wrzesien' => '9',
-    'pazdziernik' => '10',
-    'listopad' => '11',
-    'grudzien' => '12',
+    'styczen',
+    'luty' ,
+    'marzec' ,
+    'kwiecien'  ,
+    'maj' ,
+    'czerwiec' ,
+    'lipiec' ,
+    'sierpien' ,
+    'wrzesien' ,
+    'pazdziernik' ,
+    'listopad' ,
+    'grudzien' ,
 );
 
 
 ?>
-<option value="Styczen"></option>
+
 <select>
 <?php
-foreach($a as $a)
+$selected = '';
+foreach($a as $indeks => $a) {
 
 
+    echo '<option value="' . $a . '"' . $selected . '>' . $a . '</option>';
+}
 ?>
 </select>
 </body>
+
 </html>
