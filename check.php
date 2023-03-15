@@ -25,7 +25,8 @@
         <legend>Liczby</legend>
         <?php
         foreach (range(0, 100, 10) as $value) {
-            echo "<label for='nr'><input type='checkbox' name='aha' id='a' ></label> $value";
+
+            echo "<label for='nr'><input type='checkbox' name='aha[]' id='a_$value' value='$value' ></label>$value ";
         }
         ?>
         <br>
@@ -33,9 +34,14 @@
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST')
         {
-            echo '<pre>';
-            Print_r($_POST);
-            echo '</pre>';
+            echo '<p>';
+            if (!empty($_POST["aha"]))
+            echo "te liczby zostały wybrane: ".IMPLODE(",",$_POST['aha']);
+                else{
+                    Echo'Żadna liczba nie została wybrana';
+                }
+
+            echo '</p>';
         }
         ?>
     </fieldset>
