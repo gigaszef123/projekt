@@ -1,28 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formularz typu radio</title>
-    <style>
-        fieldset {
-            border: 2px solid black;
-            width: 250px;
-        }
-        legend {
-            font-weight: bold;
-        }
-    </style>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-<form>
-    <fieldset>
-        <legend>Roczniki</legend>
+<form method="post">
+    <table style="border: 1px solid lightgray; border-collapse: collapse;">
+        <caption style="font-weight: bold; font-size: 1.2em;">Oceny</caption>
+        <tbody>
         <?php
-        for ($i = 2010; $i <= 2025; $i++) {
-            echo "<label><input type='radio' name='rok' value='$i'>$i</label><br>";
+        for ($a = 1; $a <= 100; $a++) {
+            echo '<tr>
+                  <td style="padding: 7px;">Uczeń '.$a.':</td>
+                  <td><input type="text" name="uczen_'.$a.'"></td></tr>';
         }
         ?>
-    </fieldset>
+        <tr>
+            <td colspan="2" style="text-align: center; padding: 10px;">
+                <button type="submit" name="submit">Zapisz</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </form>
+
 </body>
 </html>
